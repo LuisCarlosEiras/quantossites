@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-!pip install googletrans
+pip install googletrans
 
 import streamlit as st
 import googletrans
