@@ -8,9 +8,11 @@ translator = Translator()
 
 st.title('Quantos sites e servidores tem a internet?')
 
-import beautifulsoap4 as bs4
-from bs4 import BeautifulSoup
 import requests
+from requests import get
+from bs4 import BeautifulSoup
+import pandas as pd
+
 url = "https://news.netcraft.com/archives/category/web-server-survey"
 r  = requests.get(url)
 data = r.text
