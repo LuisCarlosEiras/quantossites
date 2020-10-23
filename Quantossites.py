@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-pip install googletrans
 
 import streamlit as st
-import googletrans
+
 
 from googletrans import Translator
 translator = Translator()
