@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
 import streamlit as st
-
 
 from googletrans import Translator
 translator = Translator()
 
 st.title('Quantos sites e servidores tem a internet?')
 
+import beautifulsoap4 as bs4
 from bs4 import BeautifulSoup
 import requests
 url = "https://news.netcraft.com/archives/category/web-server-survey"
