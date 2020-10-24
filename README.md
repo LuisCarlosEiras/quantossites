@@ -1,1 +1,1 @@
-# Quantos sites e servidores existem na internet, segundo o Netcraft.
+Quantos sites e servidores existem na internet neste mês, segundo o Netcraft.
