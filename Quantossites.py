@@ -22,10 +22,10 @@ paragraph = container.find("p")
 for p in container.find_all("p", limit = 1):  
     p.text
     
-st.write("""*Tradução do googletrans*:""")
+# st.write("""*Tradução do googletrans*:""")
     
-result=translator.translate(p.text, dest='pt') 
-st.write(result.text)
+# result=translator.translate(p.text, dest='pt') 
+# st.write(result.text)
 
 st.write("""*Fonte*: Netcraft""")
 
