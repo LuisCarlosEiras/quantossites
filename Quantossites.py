@@ -6,7 +6,7 @@ gc.collect()
 
 import streamlit as st
 
-from py_translator import TEXTLIB
+# from py_translator import TEXTLIB
 # translator = Translator(to_lang = "pt")
 
 st.title('Quantos sites e servidores têm a internet?')
@@ -24,9 +24,9 @@ paragraph = container.find("p")
 for p in container.find_all("p", limit = 1):  
     p.text
     
-st.write("""*Tradução do googletrans*:""") 
-result=TEXTLIB().translate(p.text, lang_to='pt').text
-st.write(result)
+# st.write("""*Tradução do googletrans*:""") 
+# result=TEXTLIB().translate(p.text, lang_to='pt').text
+# st.write(result)
 st.write("""*Fonte*: Netcraft""")
 
 # s = Translator().translate(text='Hello my friend', dest='es').text
