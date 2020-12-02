@@ -3,17 +3,14 @@
 
 import streamlit as st
 
-# from googletrans import Translator
 from translate import Translator
 translator = Translator(to_lang = "pt")
-# to_lang = 'pt'
 
 st.title('Quantos sites e servidores têm a internet?')
 
 import requests
 from requests import get
 from bs4 import BeautifulSoup
-
 
 url = "https://news.netcraft.com/archives/category/web-server-survey"
 r  = requests.get(url)
@@ -26,8 +23,8 @@ for p in container.find_all("p", limit = 1):
     
 st.write("""*Tradução do googletrans*:""")
     
-result=translator.translate(p.text) # dest='pt') 
-st.write(result) # .text)
+result=translator.translate(p.text) 
+st.write(result)
 
 st.write("""*Fonte*: Netcraft""")
 
