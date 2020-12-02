@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import gc
+gc.collect()
+
 import streamlit as st
 
 from translate import Translator
