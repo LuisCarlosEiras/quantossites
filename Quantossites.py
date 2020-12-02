@@ -6,8 +6,6 @@ gc.collect()
 
 import streamlit as st
 
-import py_translator
-
 from py_translator import Translator
 # translator = Translator(to_lang = "pt")
 
@@ -31,7 +29,6 @@ result=Translator().translate(p.text, dest='pt').text
 st.write(result)
 st.write("""*Fonte*: Netcraft""")
 
-from py_translator import Translator
 # s = Translator().translate(text='Hello my friend', dest='es').text
 
 
