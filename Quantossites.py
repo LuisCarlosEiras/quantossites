@@ -6,6 +6,8 @@ gc.collect()
 
 import streamlit as st
 
+import py_translator
+
 from py_translator import Translator
 # translator = Translator(to_lang = "pt")
 
