@@ -5,8 +5,8 @@ import streamlit as st
 
 # from googletrans import Translator
 from translate import Translator
-translator = Translator()
-to_lang = 'pt'
+translator = Translator(to_lang = "pt")
+# to_lang = 'pt'
 
 st.title('Quantos sites e servidores têm a internet?')
 
