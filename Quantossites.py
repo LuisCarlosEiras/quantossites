@@ -28,14 +28,14 @@ import googletrans
 importlib.reload(googletrans)
 
 from googletrans import Translator
-# translator = Translator()
+translator = Translator()
 
 st.write("""*Tradução do googletrans*:""") 
-result=Translator().translate(p.text, dest = 'pt').text
+result = translator.translate(p.text, dest = 'pt')
 st.write(result) 
 st.write("""*Fonte*: Netcraft""")
 
-# s = Translator().translate(text='Hello my friend', dest='es').text
+
 
 
 
