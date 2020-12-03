@@ -25,7 +25,7 @@ for p in container.find_all("p", limit = 1):
     p.text
     
 st.write("""*Tradução do googletrans*:""") 
-result=translator.translate(p.text, dest = 'pt')
+result=Translator().translate(p.text, dest = 'pt').text
 st.write(result) 
 st.write("""*Fonte*: Netcraft""")
 
