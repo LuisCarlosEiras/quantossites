@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# https://stackoverflow.com/questions/52455774/googletrans-stopped-working-with-error-nonetype-object-has-no-attribute-group
+
 import gc
 gc.collect()
 
 import streamlit as st
-
-from googletrans import Translator
-translator = Translator()
 
 st.title('Quantos sites e servidores têm a internet?')
 
@@ -23,7 +22,11 @@ container = soup.find("div",attrs={'class': 'post__content'})
 paragraph = container.find("p")
 for p in container.find_all("p", limit = 1):  
     p.text
-    
+
+import importlib
+import googletrans
+importlib.reload(googletrans)
+
 st.write("""*Tradução do googletrans*:""") 
 result=Translator().translate(p.text, dest = 'pt').text
 st.write(result) 
