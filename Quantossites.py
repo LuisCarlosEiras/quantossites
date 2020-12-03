@@ -27,6 +27,9 @@ import importlib
 import googletrans
 importlib.reload(googletrans)
 
+from googletrans import Translator
+# translator = Translator()
+
 st.write("""*Tradução do googletrans*:""") 
 result=Translator().translate(p.text, dest = 'pt').text
 st.write(result) 
