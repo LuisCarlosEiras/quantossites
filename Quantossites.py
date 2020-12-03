@@ -27,10 +27,10 @@ import importlib
 import googletrans
 importlib.reload(googletrans)
 
-from googletrans import Translator
-translator = Translator()
+# from googletrans import Translator
+# translator = Translator()
 
-st.write("""*Tradução do googletrans*:""") 
-result = translator.translate(p.text, dest = 'pt')
-st.write(result) 
+# st.write("""*Tradução do googletrans*:""") 
+# result = translator.translate(p.text, dest = 'pt')
+# st.write(result) 
 st.write("""*Fonte*: Netcraft""")
