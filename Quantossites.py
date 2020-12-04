@@ -23,9 +23,12 @@ paragraph = container.find("p")
 for p in container.find_all("p", limit = 1):  
     p.text
 
-import importlib
-import googletrans
-importlib.reload(googletrans)
+from google_trans_new import google_translator 
+st.write("""*Tradução do googletrans*:""") 
+translator = google_translator()
+translate_text = translator.translate(ptext, lang_tgt='pt')  
+st.write(translate_text)
+st.write("""*Fonte*: Netcraft""")
 
 # from googletrans import Translator
 # translator = Translator()
