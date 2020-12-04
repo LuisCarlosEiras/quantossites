@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# https://stackoverflow.com/questions/52455774/googletrans-stopped-working-with-error-nonetype-object-has-no-attribute-group
-
 import gc
 gc.collect()
 
@@ -30,10 +28,3 @@ translate_text = translator.translate(p.text, lang_tgt='pt')
 st.write(translate_text)
 st.write("""*Fonte*: Netcraft""")
 
-# from googletrans import Translator
-# translator = Translator()
-
-# st.write("""*Tradução do googletrans*:""") 
-# result = translator.translate(p.text, dest = 'pt')
-# st.write(result) 
-st.write("""*Fonte*: Netcraft""")
